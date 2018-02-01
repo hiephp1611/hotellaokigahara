@@ -1,0 +1,52 @@
+
+.grid-page {
+  height: 100%;
+  margin: auto 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+  "h h h"
+  "n n n"
+  "c c c"
+  "s s s"
+  "f f f";
+  grid-gap: 5px;
+}
+@media screen and (min-width: 600px) {
+  .grid-page {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-areas:
+    "h h h"
+    "n n n"
+    "c c s"
+    "f f f";
+    grid-gap: 5px;
+
+  }
+}
+
+.header {
+    grid-area: h;
+}
+
+.nav {
+    grid-area: n;
+    background-color: #806B43;
+}
+
+.content {
+    grid-area: c;
+    background-color: rgba(128, 107, 67, 0.8);
+}
+
+.side {
+    grid-area: s;
+    background-color: rgba(128, 107, 67, 0.8);
+}
+
+.footer {
+    grid-area: f;
+    background-color: rgba(128, 107, 67, 0.8);
+}

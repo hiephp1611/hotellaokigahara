@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Hotell Aokigahara</title>
+    <link href="style-grid.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Montserrat" rel="stylesheet">
+
+  </head>
+
+  <body>
+      <div class="Slides">
+
+    </div>
+    <div class="grid-page">
+            <div class="header">
+              <img class="logo" src="img/logo.png" alt="logo">
+              <img class="mySlides" src="img/view1.jpg" alt="view" >
+              <img class="mySlides" src="img/view2.jpg" alt="view">
+              <img class="mySlides" src="img/view3.jpg" alt="view">
+              <img class="mySlides" src="img/view4.jpg" alt="view">
+              <img class="mySlides" src="img/view5.jpg" alt="view">
+              <img class="mySlides" src="img/view6.jpg" alt="view">
+              <img class="mySlides" src="img/view7.jpg" alt="view">
+            </div>
+            <div class="nav" id="nav">
+              <a href="index.html">Start</a>
+              <a href="boka.html">Boka</a>
+              <a href="hitta.html">Hitta</a>
+              <a href="kontakt.html" class="active">Kontakta</a>
+              <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            <div class="content">
+              <div class="container">
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="sweden">Sweden</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                  <input type="submit" value="Submit">
+                </form>
+                </div>
+            </div>
+            <div class="side">  <ul>
+                <li>
+                  Donec eget magna risus. Pellentesque porta dui ligula
+                </li>
+                <li>
+                  Nec efficitur purus hendrerit nec. Pellentesque vitae dapibus diam.
+                </li>
+              </ul>
+            </div>
+            <div class="footer">
+              <p>Hotell Aokigahara | Storgatan 1 | 123 45 Storstad | 012 - 12 34 56</p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+  </body>
+
+</html>
